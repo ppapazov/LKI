@@ -1,0 +1,66 @@
+01232018 11:52:11 AM - RegisterCoursesPage - INFO - Element Found with locator //a[@href='/courses']
+01232018 11:52:11 AM - RegisterCoursesPage - INFO - Clicked on element with locator //a[@href='/courses'] locatorType: xpath
+01232018 11:52:13 AM - RegisterCoursesPage - INFO - Element Found with locator search-courses
+01232018 11:52:13 AM - RegisterCoursesPage - INFO - Keys 'javaScript for beginners' sent to locator search-courses locatorType: id
+01232018 11:52:13 AM - RegisterCoursesPage - INFO - Element Found with locator //a[@href='/p/complete-javascript-guide']
+01232018 11:52:13 AM - RegisterCoursesPage - INFO - Clicked on element with locator //a[@href='/p/complete-javascript-guide'] locatorType: xpath
+01232018 11:52:14 AM - RegisterCoursesPage - INFO - Element Found with locator enroll-button-top
+01232018 11:52:20 AM - RegisterCoursesPage - INFO - Clicked on element with locator enroll-button-top locatorType: id
+01232018 11:52:20 AM - RegisterCoursesPage - INFO - Element Found with locator email
+01232018 11:52:20 AM - RegisterCoursesPage - INFO - Keys 's@yopmail.com' sent to locator email locatorType: id
+01232018 11:52:20 AM - RegisterCoursesPage - INFO - Element Found with locator cardnumber
+01232018 11:52:20 AM - RegisterCoursesPage - INFO - Keys '5457 0822 3591 3352' sent to locator cardnumber locatorType: name
+01232018 11:52:20 AM - RegisterCoursesPage - INFO - Element Found with locator cvc
+01232018 11:52:20 AM - RegisterCoursesPage - INFO - Keys '123' sent to locator cvc locatorType: name
+01232018 11:52:20 AM - RegisterCoursesPage - INFO - Element Found with locator exp-date
+01232018 11:52:20 AM - RegisterCoursesPage - INFO - Keys '‎12 / ‎19' sent to locator exp-date locatorType: name
+01232018 11:52:20 AM - RegisterCoursesPage - INFO - Element Found with locator postal
+01232018 11:52:20 AM - RegisterCoursesPage - INFO - Keys '1' sent to locator postal locatorType: name
+01232018 11:52:20 AM - RegisterCoursesPage - INFO - Element Found with locator confirm-purchase
+01232018 11:52:20 AM - RegisterCoursesPage - INFO - Clicked on element with locator confirm-purchase locatorType: id
+01232018 11:52:25 AM - RegisterCoursesPage - INFO - Element with locator //div[@class='spc']//div[.='The card was declined.']and locatorTypexpath is not found
+01232018 11:52:25 AM - RegisterCoursesPage - INFO - Element not displayed with locator: //div[@class='spc']//div[.='The card was declined.'] locatorType: xpath
+01232018 11:55:39 AM - RegisterCoursesPage - INFO - Element Found with locator //a[@href='/courses']
+01232018 11:55:39 AM - RegisterCoursesPage - INFO - Clicked on element with locator //a[@href='/courses'] locatorType: xpath
+01232018 11:55:41 AM - RegisterCoursesPage - INFO - Element Found with locator search-courses
+01232018 11:55:41 AM - RegisterCoursesPage - INFO - Keys 'javaScript for beginners' sent to locator search-courses locatorType: id
+01232018 11:55:41 AM - RegisterCoursesPage - INFO - Element Found with locator //a[@href='/p/complete-javascript-guide']
+01232018 11:55:41 AM - RegisterCoursesPage - INFO - Clicked on element with locator //a[@href='/p/complete-javascript-guide'] locatorType: xpath
+01232018 11:55:41 AM - RegisterCoursesPage - INFO - Element Found with locator enroll-button-top
+01232018 11:55:48 AM - RegisterCoursesPage - INFO - Clicked on element with locator enroll-button-top locatorType: id
+01232018 11:55:48 AM - RegisterCoursesPage - INFO - Element Found with locator email
+01232018 11:55:48 AM - RegisterCoursesPage - INFO - Keys 's@yopmail.com' sent to locator email locatorType: id
+01232018 11:55:48 AM - RegisterCoursesPage - INFO - Element Found with locator cardnumber
+01232018 11:55:48 AM - RegisterCoursesPage - INFO - Keys '5457 0822 3591 3352' sent to locator cardnumber locatorType: name
+01232018 11:55:48 AM - RegisterCoursesPage - INFO - Element Found with locator cvc
+01232018 11:55:48 AM - RegisterCoursesPage - INFO - Keys '123' sent to locator cvc locatorType: name
+01232018 11:55:48 AM - RegisterCoursesPage - INFO - Element Found with locator exp-date
+01232018 11:55:48 AM - RegisterCoursesPage - INFO - Keys '‎12 / ‎19' sent to locator exp-date locatorType: name
+01232018 11:55:48 AM - RegisterCoursesPage - INFO - Element Found with locator postal
+01232018 11:55:49 AM - RegisterCoursesPage - INFO - Keys '1' sent to locator postal locatorType: name
+01232018 11:55:49 AM - RegisterCoursesPage - INFO - Element Found with locator confirm-purchase
+01232018 11:55:49 AM - RegisterCoursesPage - INFO - Clicked on element with locator confirm-purchase locatorType: id
+01232018 11:55:54 AM - RegisterCoursesPage - INFO - Element with locator //div[.='The card number is incorrect.']and locatorTypexpath is not found
+01232018 11:55:54 AM - RegisterCoursesPage - INFO - Element not displayed with locator: //div[.='The card number is incorrect.'] locatorType: xpath
+01232018 11:58:10 AM - RegisterCoursesPage - INFO - Element Found with locator //a[@href='/courses']
+01232018 11:58:11 AM - RegisterCoursesPage - INFO - Clicked on element with locator //a[@href='/courses'] locatorType: xpath
+01232018 11:58:11 AM - RegisterCoursesPage - INFO - Element Found with locator search-courses
+01232018 11:58:12 AM - RegisterCoursesPage - INFO - Keys 'javaScript for beginners' sent to locator search-courses locatorType: id
+01232018 11:58:12 AM - RegisterCoursesPage - INFO - Element Found with locator //a[@href='/p/complete-javascript-guide']
+01232018 11:58:12 AM - RegisterCoursesPage - INFO - Clicked on element with locator //a[@href='/p/complete-javascript-guide'] locatorType: xpath
+01232018 11:58:12 AM - RegisterCoursesPage - INFO - Element Found with locator enroll-button-top
+01232018 11:58:19 AM - RegisterCoursesPage - INFO - Clicked on element with locator enroll-button-top locatorType: id
+01232018 11:58:19 AM - RegisterCoursesPage - INFO - Element Found with locator email
+01232018 11:58:19 AM - RegisterCoursesPage - INFO - Keys 's@yopmail.com' sent to locator email locatorType: id
+01232018 11:58:19 AM - RegisterCoursesPage - INFO - Element Found with locator cardnumber
+01232018 11:58:19 AM - RegisterCoursesPage - INFO - Keys '5457 0822 3591 3352' sent to locator cardnumber locatorType: name
+01232018 11:58:19 AM - RegisterCoursesPage - INFO - Element Found with locator cvc
+01232018 11:58:19 AM - RegisterCoursesPage - INFO - Keys '123' sent to locator cvc locatorType: name
+01232018 11:58:19 AM - RegisterCoursesPage - INFO - Element Found with locator exp-date
+01232018 11:58:20 AM - RegisterCoursesPage - INFO - Keys '‎12 / ‎19' sent to locator exp-date locatorType: name
+01232018 11:58:20 AM - RegisterCoursesPage - INFO - Element Found with locator postal
+01232018 11:58:20 AM - RegisterCoursesPage - INFO - Keys '1' sent to locator postal locatorType: name
+01232018 11:58:20 AM - RegisterCoursesPage - INFO - Element Found with locator confirm-purchase
+01232018 11:58:20 AM - RegisterCoursesPage - INFO - Clicked on element with locator confirm-purchase locatorType: id
+01232018 11:58:28 AM - RegisterCoursesPage - INFO - Element with locator //div[.='The card number is incorrect.']and locatorTypexpath is not found
+01232018 11:58:28 AM - RegisterCoursesPage - INFO - Element not displayed with locator: //div[.='The card number is incorrect.'] locatorType: xpath

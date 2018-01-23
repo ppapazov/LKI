@@ -1,0 +1,3 @@
+{
+  "tests/courses/register_courses_test.py::RegisterCoursesTest::test_invalidEnrollment": true
+}
