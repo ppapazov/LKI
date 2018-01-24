@@ -13,8 +13,8 @@ class RegisterCoursesPage(BasePage):
 
     # Locators
     _search_box = "search-courses"
-    _course = "//a[@href='/p/complete-javascript-guide']"
-    _all_courses = "presentation"
+    _course = "//div[contains(@class, 'course-listing-title') and contains(text(), '{0}')]"
+    _all_courses = "//div[@class='course-listing-title']"
     _enroll_button = "enroll-button-top"
     _use_another_card = "Use another card"
     _cc_num = "cardnumber"
@@ -22,7 +22,7 @@ class RegisterCoursesPage(BasePage):
     _cc_cvv = "cvc"
     _cc_postal = "postal"
     _submit_enroll = "confirm-purchase"
-    _enroll_error_message = "//div[.='The card number is incorrect.']"
+    _enroll_error_message = "//div[contains (text(),'The card was declined.')]"
     _courses = "//a[@href='/courses']"
     _email = "email"
 
@@ -33,8 +33,8 @@ class RegisterCoursesPage(BasePage):
     def enterCourseName(self, name):
         self.sendKeys(name, self._search_box)
 
-    def selectCoureToEnroll(self):
-        self.elementClick(self._course, locatorType="xpath")
+    def selectCoureToEnroll(self, fullCourseName):
+        self.elementClick(self._course.format(fullCourseName), locatorType="xpath")
 
     def startEnroll(self):
         self.elementClick(self._enroll_button)
@@ -65,17 +65,19 @@ class RegisterCoursesPage(BasePage):
     def clickEnrollSubmitButton(self):
         self.elementClick(self._submit_enroll)
 
-    def enterCreditCardData(self, num, exp, cvv):
+    def enterCreditCardData(self, num, exp, cvv, postal):
         self.enterCardNum(num)
         self.enterCardCVV(cvv)
         self.enterCardExp(exp)
+        self.enterPostal(postal)
 
-    def enrollCource(self, num="", exp="", cvv=""):
-        self.enterCreditCardData(num="5457 0822 3591 3352", exp="‎12 / ‎19", cvv="123")
-        self.enterPostal(postal="1")
+    def enrollCource(self, num="", exp="", cvv="", postal=""):
+        self.scrollPage(direction="down")
+        self.enterCreditCardData(num, exp, cvv, postal)
         self.clickEnrollSubmitButton()
 
     def verifyEnrollFailed(self):
-        self.isElementDisplayed(self._enroll_error_message, locatorType="xpath")
-
+        messageElement = self.isElementPresent(self._enroll_error_message, locatorType="xpath")
+        result = self.isElementPresent(element=messageElement)
+        return result
 

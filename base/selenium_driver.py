@@ -179,7 +179,7 @@ class SeleniumDriver():
                                  ignored_exceptions=[NoSuchElementException,
                                                      ElementNotVisibleException,
                                                      ElementNotSelectableException])
-            element = wait.until(EC.element_to_be_clickable((byType, "stopFilter_stops-0")))
+            element = wait.until(EC.element_to_be_click((byType, "stopFilter_stops-0")))
 
             self.log.info("Element appeared in web page")
         except:
