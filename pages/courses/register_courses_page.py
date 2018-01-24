@@ -72,7 +72,7 @@ class RegisterCoursesPage(BasePage):
         self.enterPostal(postal)
 
     def enrollCource(self, num="", exp="", cvv="", postal=""):
-        self.scrollPage(direction="down")
+        #self.scrollPage(direction="down")
         self.enterCreditCardData(num, exp, cvv, postal)
         self.clickEnrollSubmitButton()
 
