@@ -18,7 +18,7 @@ class WebDriverFactory():
         else:
             driver = webdriver.Firefox()
 
-        driver.implicitly_wait(3)
+        driver.implicitly_wait(10)
         driver.maximize_window()
         driver.get(baseUrl)
         return driver
