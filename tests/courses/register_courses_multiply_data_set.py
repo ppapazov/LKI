@@ -4,6 +4,7 @@ from base.selenium_driver import SeleniumDriver
 import unittest
 import pytest
 from ddt import ddt, data, unpack
+import  time
 
 
 @pytest.mark.usefixtures("oneTimeSetUp", "setUp")
@@ -17,19 +18,19 @@ class RegisterCoursesTest(unittest.TestCase):
         self.d = SeleniumDriver(self.driver)
 
     @pytest.mark.run(order=1)
-    @data(("JavaScript for beginners", "5457 0822 3591 3352", "12 / 19", "123", "01234"))
+    @data(("JavaScript for beginners", "5457 0822 3591 3352", "12 / 19", "123", "01234"),
+          ("Learn Python 3 from scratch", "5457 0822 3591 3352", "12 / 20", "123", "01234"))
     @unpack
     def test_invalidEnrollment(self, courseName, ccNum, ccDate, ccCvv, postal):
         self.courses.openCousesPage()
-        self.courses.enterCourseName("JavaScript")
+        self.courses.enterCourseName(courseName)
         self.courses.selectCoureToEnroll(courseName)
         self.courses.startEnroll()
         self.courses.enterEmail("s@yopmail.com")
-        self.d.scrollPage(direction="down")
         self.courses.enrollCource(num=ccNum, exp=ccDate, cvv=ccCvv, postal=postal)
         result = self.courses.verifyEnrollFailed()
         self.ts.markFinal("test_invalidEnrollment", result, "Enrollment Failed verification")
-        self.courses.openCousesPage()
+        self.driver.get("https://letskodeit.teachable.com")
 
 
 
