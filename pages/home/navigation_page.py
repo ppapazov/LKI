@@ -16,7 +16,7 @@ class NavigationPage(BasePage):
     _my_courses = "//a[@href='/courses/enrolled']"
     _courses = "//a[@href='/courses']"
     _practice = "//a[@href='/pages/practice']"
-    _user_settings_icon = "//div[@id='navbar']//span[text()='User Settings']"
+    _user_settings_icon = "//div[@id='navbar']//ul[@class='nav navbar-nav navbar-right']/li[@class='dropdown']/a"
     _main_page = "//a/img"
 
     def navigateToAllCourses(self):

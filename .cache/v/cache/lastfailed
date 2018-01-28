@@ -1,5 +1,6 @@
 {
   "tests/courses/register_courses_multiply_data_set.py::RegisterCoursesTest::test_invalidEnrollment_1___JavaScript_for_beginners____5457_0822_3591_3352____12___19____123____01234__": true,
   "tests/courses/register_courses_multiply_data_set.py::RegisterCoursesTest::test_invalidEnrollment_2___Learn_Python_3_from_scratch____5457_0822_3591_3352____12___20____123____01234__": true,
-  "tests/courses/register_courses_test.py::RegisterCoursesTest::test_invalidEnrollment": true
+  "tests/courses/register_courses_test.py::RegisterCoursesTest::test_invalidEnrollment": true,
+  "tests/home/login_tests.py::LoginTests::test_validLogin": true
 }
