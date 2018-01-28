@@ -16,7 +16,7 @@ class RegisterCoursesPage(BasePage):
     _course = "//div[contains(@class, 'course-listing-title') and contains(text(), '{0}')]"
     _all_courses = "//div[@class='course-listing-title']"
     _enroll_button = "enroll-button-top"
-    _use_another_card = "Use another card"
+    _use_another_card = "//div[@class='spc']//button[.='Use another card']"
     _cc_num = "cardnumber"
     _cc_expired = "exp-date"
     _cc_cvv = "cvc"
@@ -80,4 +80,7 @@ class RegisterCoursesPage(BasePage):
         messageElement = self.isElementPresent(self._enroll_error_message, locatorType="xpath")
         result = self.isElementPresent(element=messageElement)
         return result
+
+    def useAnotherCard(self):
+        self.elementClick(self._use_another_card, locatorType="xpath")
 
